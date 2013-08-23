@@ -31,3 +31,5 @@ First, make sure that you have the service wrapper installed (see "Setting up El
 * ElasticSearch is now set up to run as a service on startup, running under the user <code>elasticsearch</code>.  You can start and stop ElasticSearch using:
 ** <code>/etc/rc.d/elasticsearch start</code>
 ** <code>/etc/rc.d/elasticsearch stop</code>
+
+* Note that running as a non-root user will prevent elasticsearch from being able to log memory with mlockall
